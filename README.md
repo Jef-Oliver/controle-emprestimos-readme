@@ -1,4 +1,4 @@
-# Sistema de Controle Patrimonial
+# Sistema de Controle Patrimonial (Empréstimos de materiais.)
 ## Observação: Este repositório contém apenas o README. O código-fonte completo e funcional do projeto está hospedado em um repositório privado, acessível exclusivamente para recrutadores e interessados $$.
 
 Este projeto fornece uma aplicação web para registrar e gerenciar empréstimos de materiais e equipamentos em uma organização. Desenvolvido com Django, o sistema permite o controle de retiradas, devoluções, alertas de vencimento e histórico por funcionário.
@@ -137,3 +137,16 @@ Desenvolvido por Jeferson de Oliveira Santos
 Contato: jeferson.greenish@gmail.com  
 LinkedIn: [https://www.linkedin.com/in/jeefisantos](https://www.linkedin.com/in/jeefisantos)  
 GitHub: [https://github.com/Jef-Oliver](https://github.com/Jef-Oliver)
+
+
+# IMAGENS DO PROJETO FUNCIONAL
+
+![Admin do Django](captura1.png)
+![Admin do Django](captura2.png)
+![Admin do Django](captura3.png)
+![Admin do Django](captura4.png)
+![Admin do Django](captura5.png)
+![Admin do Django](captura6.png)
+![Admin do Django](captura7.png)
+
+
