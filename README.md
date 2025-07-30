@@ -124,7 +124,7 @@ controle_emprestimos/
 ## 📌 Próximos Passos
 
 - ✅ Finalizar templates com Bootstrap
-- 🔜 Implementar alertas de devolução
+- ✅ Implementar alertas de devolução
 - 🔜 Exportação de relatórios (PDF/Excel)
 - 🔜 Histórico por colaborador
 - 🔜 Autenticação e controle de acesso (opcional)
