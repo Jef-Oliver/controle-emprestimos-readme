@@ -1,5 +1,5 @@
 # Sistema de Controle Patrimonial
-## Observação: Este repositório contém apenas o README. O código-fonte completo e funcional do projeto está hospedado em um repositório privado, disponível exclusivamente para recrutadores e interessados $.
+## Observação: Este repositório contém apenas o README. O código-fonte completo e funcional do projeto está hospedado em um repositório privado, acessível exclusivamente para recrutadores e interessados $$.
 
 Este projeto fornece uma aplicação web para registrar e gerenciar empréstimos de materiais e equipamentos em uma organização. Desenvolvido com Django, o sistema permite o controle de retiradas, devoluções, alertas de vencimento e histórico por funcionário.
 
@@ -42,6 +42,7 @@ Este projeto fornece uma aplicação web para registrar e gerenciar empréstimos
 - **Alerta de devolução no dia atual** (em amarelo):
   - Destaque na linha da tabela
   - Mensagem informativa no topo da página
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
