@@ -116,7 +116,14 @@ controle_emprestimos/
 │           ├── home.html
 │           ├── emprestimos.html
 │           ├── novo_emprestimo.html
-│           └── devolucao.html
+│           ├── devolucao.html
+│           ├── editar_emprestimo.html
+│           ├── criar_funcionario.html
+│           ├── editar_funcionario.html
+│           ├── criar_item.html
+│           ├── editar_item.html
+│           ├── lista_funcionarios.html
+│           └── lista_items.html
 ├── config/
 │   ├── settings.py
 │   └── urls.py
