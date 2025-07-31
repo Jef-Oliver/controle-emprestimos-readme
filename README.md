@@ -170,5 +170,4 @@ GitHub: [https://github.com/Jef-Oliver](https://github.com/Jef-Oliver)
 ![Admin do Django](captura5.png)
 ![Admin do Django](captura6.png)
 ![Admin do Django](captura7.png)
-
-
+![Admin do Django](captura8.png)
