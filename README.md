@@ -8,8 +8,9 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
 ## ✅ Funcionalidades Implementadas até o momento
 
 ### 📦 Gestão de Dados
-- Cadastro de **itens** com categoria, código e status (`disponível` ou `emprestado`)
+- Cadastro de **itens** com categoria, código e status (`disponível`, `emprestado`, `manutenção`)
 - Cadastro de **funcionários**
+- **Listagem de patrimônios** (itens) na página inicial, com quantidade disponível, emprestado e em manutenção
 
 ### 🔁 Empréstimos e Devoluções
 - Registro de **empréstimos** com:
@@ -20,6 +21,7 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
   - Registro da data real de devolução
   - Botão de devolução na interface pública
 - **Edição de Empréstimos**: Permite editar empréstimos já registrados, atualizando a data de devolução e outras informações. Após a edição, o usuário é redirecionado para a lista de empréstimos.
+- **Exclusão de empréstimos** (com confirmação)
 
 ### ⚙️ Administração e Backend
 - Visualização e gerenciamento de dados via **Django Admin**
@@ -28,12 +30,15 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
 - Link para página de detalhes ao clicar no nome do item
 
 ### 🌐 Interface Web Responsiva (Bootstrap 5)
-- Página **inicial** amigável
+- Página **inicial** amigável, com tabela de patrimônios e estoque atualizado
 - Lista de **empréstimos atuais**, ordenados por data de retirada
 - Formulário de **novo empréstimo** com:
   - Validação de item indisponível
-  - Exibição de mensagens de erro
+  - Exibição de mensagens de erro em português
 - Página de **confirmação de devolução**
+- **Formulários responsivos** para cadastro e edição de funcionários e itens, com campos obrigatórios destacados e mensagens de erro em português
+- **Exclusão de funcionários e itens** com confirmação visual
+- Tabelas de listagem (funcionários, itens, empréstimos) em cards Bootstrap, com rolagem e responsividade
 
 ### 🚨 Alertas Visuais Inteligentes
 - **Alerta de devolução vencida** (em vermelho):
@@ -48,6 +53,7 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
 - **Formulários** responsivos e validados com Bootstrap
 - **Edição de Funcionários**: Edita os dados dos funcionários registrados.
 - **Edição de Itens**: Edita os dados dos itens (materiais/equipamentos).
+- **Exclusão de funcionários** (com confirmação)
 
 ---
 
@@ -58,6 +64,7 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
 - SQLite (ou PostgreSQL)
 - Bootstrap 5 (em templates)
 - Django Admin
+- [django-widget-tweaks](https://github.com/jazzband/django-widget-tweaks) (para customização de formulários)
 
 ---
 
@@ -80,7 +87,7 @@ source venv/Scripts/activate  # Windows
 ### 3. Instale as dependências
 
 ```bash
-pip install django
+pip install django django-widget-tweaks
 ```
 
 ### 4. Aplique as migrações e crie o superusuário
@@ -106,27 +113,28 @@ Admin: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 ```
 controle_emprestimos/
 ├── core/
-│   ├── admin.py
-│   ├── models.py
-│   ├── urls.py
-│   ├── views.py
-│   └── templates/
-│       └── core/
-│           ├── base.html
-│           ├── home.html
-│           ├── emprestimos.html
-│           ├── novo_emprestimo.html
-│           ├── devolucao.html
-│           ├── editar_emprestimo.html
-│           ├── criar_funcionario.html
-│           ├── editar_funcionario.html
-│           ├── criar_item.html
-│           ├── editar_item.html
-│           ├── lista_funcionarios.html
-│           └── lista_items.html
+│ ├── admin.py
+│ ├── models.py
+│ ├── urls.py
+│ ├── views.py
+│ └── templates/
+│ └── core/
+│ ├── base.html
+│ ├── home.html
+│ ├── listar_emprestimos.html
+│ ├── novo_emprestimo.html
+│ ├── devolucao.html
+│ ├── editar_emprestimo.html
+│ ├── criar_funcionario.html
+│ ├── editar_funcionario.html
+│ ├── criar_item.html
+│ ├── editar_item.html
+│ ├── lista_funcionarios.html
+│ ├── lista_items.html
+│ └── confirmar_exclusao.html
 ├── config/
-│   ├── settings.py
-│   └── urls.py
+│ ├── settings.py
+│ └── urls.py
 ├── db.sqlite3
 ├── manage.py
 ├── README.md
@@ -138,9 +146,10 @@ controle_emprestimos/
 
 - ✅ Finalizar templates com Bootstrap
 - ✅ Implementar alertas de devolução
+- 
 - 🔜 Exportação de relatórios (PDF/Excel)
 - 🔜 Histórico por colaborador
-- 🔜 Autenticação e controle de acesso (opcional)
+- 🔜 Autenticação e controle de acesso 
 
 ---
 
