@@ -59,8 +59,8 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
 
 ## 🚀 Tecnologias Utilizadas
 
-- Python 3.x
-- Django 5.x
+- Python 3.10.0
+- Django 5.2.4
 - SQLite (ou PostgreSQL)
 - Bootstrap 5 (em templates)
 - Django Admin
