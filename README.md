@@ -68,46 +68,6 @@ Este projeto fornece uma aplicação web para registrar e gerenciar materiais, e
 
 ---
 
-## 🛠️ Como rodar o projeto localmente
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/Jef-Oliver/controle-emprestimos.git
-cd controle-emprestimos
-```
-
-### 2. Crie o ambiente virtual
-
-```bash
-python -m venv venv
-source venv/Scripts/activate  # Windows
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install django django-widget-tweaks
-```
-
-### 4. Aplique as migrações e crie o superusuário
-
-```bash
-python manage.py migrate
-python manage.py createsuperuser
-```
-
-### 5. Inicie o servidor de desenvolvimento
-
-```bash
-python manage.py runserver
-```
-
-Acesse: [http://127.0.0.1:8000](http://127.0.0.1:8000)  
-Admin: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
-
----
-
 ## 📁 Estrutura Atual do Projeto
 
 ```
