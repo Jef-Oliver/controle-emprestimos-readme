@@ -106,7 +106,7 @@ controle_emprestimos/
 
 - ✅ Finalizar templates com Bootstrap
 - ✅ Implementar alertas de devolução
-- 
+- ✅ Automação de alertas no E-mail
 - 🔜 Exportação de relatórios (PDF/Excel)
 - 🔜 Histórico por colaborador
 - 🔜 Autenticação e controle de acesso 
