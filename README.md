@@ -360,5 +360,7 @@ Agradecemos a todas as organizações que inspiraram este projeto:
 
 ![Admin](cap10.png)
 ![Admin](cap11.png)
-
+![Admin](cap12.png)
+![Admin](cap13.png)
+![Admin](cap14.png)
 </div>
