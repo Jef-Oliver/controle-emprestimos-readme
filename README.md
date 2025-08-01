@@ -1,6 +1,8 @@
 # 📦 Sistema de Controle de Empréstimos
 
-> **Uma solução completa para gestão de patrimônio emprestado! 🏢📚🔧**
+**📚 Documentação do Projeto**
+Este repositório contém a documentação e imagens do Sistema de Controle de Empréstimos. O código fonte está disponível em repositório privado para recrutadores e interessados.
+**Solicite acesso ao código:** Abra uma Issue neste repositório.
 
 ## 🎯 **O que é este projeto?**
 
