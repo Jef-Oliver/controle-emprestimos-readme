@@ -361,37 +361,6 @@ docker-compose down
 
 ---
 
-## 🤝 **Contribuindo**
-
-1. **Fork o projeto**
-2. **Crie uma branch** (`git checkout -b feature/nova-funcionalidade`)
-3. **Commit suas mudanças** (`git commit -m 'Adiciona nova funcionalidade'`)
-4. **Push para a branch** (`git push origin feature/nova-funcionalidade`)
-5. **Abra um Pull Request**
-
----
-
-## 📄 **Licença**
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
----
-
-## 📞 **Suporte**
-
-- **Issues:** [GitHub Issues](https://github.com/Jef-Oliver/controle-emprestimos/issues)
-- **Documentação:** [Wiki do Projeto](https://github.com/Jef-Oliver/controle-emprestimos/wiki)
-
----
-
-## 🎉 **Agradecimentos**
-
-Agradecemos a todas as organizações que inspiraram este projeto:
-- 🏭 Empresas que emprestam ferramentas
-- 🏫 Escolas que emprestam materiais
-- 🏛️ Órgãos públicos que gerenciam patrimônio
-- 👥 Todos que precisam de controle de empréstimos
-
 **Imagens atuais do projeto** 🚀
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
