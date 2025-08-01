@@ -325,18 +325,8 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👥 Autores
 
-- **Seu Nome** - *Desenvolvimento inicial* - [SeuGitHub](https://github.com/seugithub)
+- **Jeferson Oliveira** - *Desenvolvimento inicial* - [SeuGitHub](https://github.com/Jef-Oliver)
 
-## 🙏 Agradecimentos
-
-- Django Community
-- Bootstrap
-- Todos os contribuidores
-
-## 📞 Suporte
-
-Para suporte, envie um email para suporte@exemplo.com ou abra uma issue no GitHub.
 
 ---
 
-**⭐ Se este projeto te ajudou, considere dar uma estrela!**
