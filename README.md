@@ -1,320 +1,345 @@
-# Sistema de Controle de Empréstimos
+# 📦 Sistema de Controle de Empréstimos
 
-Um sistema completo de controle de empréstimos desenvolvido em Django com recursos avançados para gerenciamento de funcionários, itens e empréstimos.
+> **Uma solução completa para gestão de patrimônio emprestado! 🏢📚🔧**
 
-## 🚀 Funcionalidades
+## 🎯 **O que é este projeto?**
 
-### Core Features
-- ✅ Gerenciamento completo de funcionários
-- ✅ Controle de itens com status (disponível, emprestado, manutenção)
-- ✅ Sistema de empréstimos com datas de retirada e devolução
-- ✅ Interface web responsiva e intuitiva
-- ✅ Filtros e busca avançada
-- ✅ Paginação de resultados
+Este é um sistema completo de controle de empréstimos de itens do patrimônio, desenvolvido em Django. Mas não é só mais um sistema qualquer - é uma solução real para um problema que afeta muitas organizações!
 
-### Recursos Avançados
-- 🐳 **Docker** - Containerização completa do projeto
-- 🧪 **Testes Automatizados** - Cobertura completa com pytest
-- 📚 **API REST** - Endpoints completos com DRF
-- 📖 **Swagger/OpenAPI** - Documentação automática da API
-- 🛡️ **Tratamento de Erros** - Sistema robusto de tratamento de exceções
-- 📊 **Relatórios PDF** - Geração automática de relatórios
-- 📧 **Emails Automatizados** - Notificações por email
-- 📱 **WhatsApp Integration** - Mensagens automáticas via WhatsApp
-- 🔒 **Segurança** - Rate limiting, CORS, validações
-- 📝 **Logging** - Sistema completo de logs
-- ⚡ **Cache** - Redis para performance
-- 🔄 **CI/CD Ready** - Preparado para automação
+**A ideia surgiu da observação de necessidades reais:**
+- 🏭 **Empresas** que emprestam ferramentas ou máquinas e anotam em planilhas
+- 🏫 **Escolas** que emprestam materiais para alunos ou professores
+- 🏛️ **Estado ou município** que empresta patrimônios
+- 🏢 **Qualquer organização** que precisa controlar o que foi emprestado
 
-## 🛠️ Tecnologias
+**O problema:** Planilhas espalhadas, controle manual, dificuldade para rastrear, falta de relatórios, comunicação manual com funcionários...
 
-- **Backend**: Django 5.2.4, Django REST Framework
-- **Database**: PostgreSQL (produção) / SQLite (desenvolvimento)
-- **Cache**: Redis
-- **Documentação**: Swagger/OpenAPI (drf-yasg)
-- **Testes**: pytest, factory-boy, coverage
-- **PDF**: ReportLab
-- **Email**: django-anymail
-- **WhatsApp**: pywhatkit
-- **Containerização**: Docker, Docker Compose
-- **Frontend**: Bootstrap, HTML5, CSS3, JavaScript
+**A solução:** Um sistema web completo, automatizado e profissional!
 
-## 📋 Pré-requisitos
+---
 
+## 🚀 **Nossa Jornada de Desenvolvimento**
+
+### **Capítulo 1: A Ideia Original - "Precisamos de um sistema de controle!" 📋**
+
+Tudo começou com uma observação simples: muitas organizações ainda usam planilhas para controlar empréstimos de patrimônio. Isso gera problemas como:
+
+- **Controle manual** - Fácil de perder informações
+- **Relatórios difíceis** - Sem visão clara do que está emprestado
+- **Comunicação manual** - Lembretes por WhatsApp ou email manual
+- **Falta de rastreabilidade** - Difícil saber quem tem o que
+
+**A solução:** Um sistema web que automatize todo o processo!
+
+### **Capítulo 2: O Sistema Completo - "Vamos automatizar tudo!" ⚡**
+
+Desenvolvemos um sistema completo com:
+
+**📊 Gestão Completa:**
+- Cadastro de funcionários
+- Cadastro de itens do patrimônio
+- Controle de empréstimos e devoluções
+- Relatórios em PDF
+- Sistema de emails automáticos
+
+**📧 Comunicação Automática:**
+- Emails automáticos para funcionários
+- Lembretes de vencimento
+- Confirmações de empréstimo
+- Notificações de atraso
+
+**🎨 Interface Moderna:**
+- Design responsivo
+- Fácil de usar
+- Relatórios visuais
+- Dashboard intuitivo
+
+---
+
+## 🛠️ **Funcionalidades do Sistema**
+
+### **👥 Gestão de Funcionários**
+- Cadastro completo (nome, matrícula, setor, email)
+- Edição e exclusão
+- Listagem organizada
+- Relatórios em PDF
+
+### **📦 Gestão de Itens**
+- Cadastro de itens do patrimônio
+- Categorização
+- Códigos internos
+- Status de disponibilidade
+
+### **🔄 Controle de Empréstimos**
+- Registro de empréstimos
+- Devoluções
+- Histórico completo
+- Status em tempo real
+
+### **📧 Sistema de Emails Automáticos**
+- **Confirmação de empréstimo** - Enviado automaticamente
+- **Lembretes de vencimento** - Para itens próximos do prazo
+- **Notificações de atraso** - Para itens vencidos
+- **Relatórios diários** - Resumo de empréstimos
+
+### **📊 Relatórios e Relatórios**
+- **Relatório de Empréstimos** - Todos os empréstimos ativos
+- **Relatório de Funcionários** - Lista completa
+- **Relatório de Itens** - Inventário do patrimônio
+- **Relatório de Devoluções** - Histórico de devoluções
+
+### **🌐 API REST**
+- Endpoints para integração
+- Documentação Swagger
+- Autenticação segura
+- Dados em JSON
+
+---
+
+## 🚀 **Como Instalar e Usar**
+
+### **📋 Pré-requisitos**
 - Python 3.11+
-- Docker e Docker Compose (opcional)
-- PostgreSQL (se não usar Docker)
-- Redis (se não usar Docker)
+- Django 4.2+
+- pytest 7+
+- reportlab 4+
+- Selenium 4+
+- Redis 5+
+- Git
+- Conta no Gmail (para envio de emails)
 
-## 🚀 Instalação
+### **⚙️ Instalação Passo a Passo**
 
-### Opção 1: Docker (Recomendado)
-
-1. **Clone o repositório**
+#### **1. Clone o repositório**
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/Jef-Oliver/controle-emprestimos.git
 cd controle-emprestimos
 ```
 
-2. **Configure as variáveis de ambiente**
-```bash
-cp env.example .env
-# Edite o arquivo .env com suas configurações
-```
-
-3. **Execute com Docker Compose**
-```bash
-docker-compose up --build
-```
-
-4. **Acesse o sistema**
-- Web: http://localhost:8000
-- API: http://localhost:8000/api/v1/
-- Swagger: http://localhost:8000/swagger/
-- Admin: http://localhost:8000/admin/
-
-### Opção 2: Instalação Local
-
-1. **Clone o repositório**
-```bash
-git clone <url-do-repositorio>
-cd controle-emprestimos
-```
-
-2. **Crie um ambiente virtual**
+#### **2. Crie um ambiente virtual**
 ```bash
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# ou
-venv\Scripts\activate  # Windows
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
 ```
 
-3. **Instale as dependências**
+#### **3. Instale as dependências**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Configure as variáveis de ambiente**
+#### **4. Configure as variáveis de ambiente**
 ```bash
+# Copie o arquivo de exemplo
 cp env.example .env
-# Edite o arquivo .env
+
+# Edite o arquivo .env com suas configurações
+# Especialmente as configurações de email
 ```
 
-5. **Execute as migrações**
+#### **5. Execute as migrações**
 ```bash
 python manage.py migrate
 ```
 
-6. **Crie um superusuário**
+#### **6. Crie um superusuário**
 ```bash
 python manage.py createsuperuser
 ```
 
-7. **Execute o servidor**
+#### **7. Execute o servidor**
 ```bash
 python manage.py runserver
 ```
 
-## 📚 Uso da API
-
-### Endpoints Disponíveis
-
-#### Funcionários
-- `GET /api/v1/funcionarios/` - Lista funcionários
-- `POST /api/v1/funcionarios/` - Cria funcionário
-- `GET /api/v1/funcionarios/{id}/` - Detalhes do funcionário
-- `PUT /api/v1/funcionarios/{id}/` - Atualiza funcionário
-- `DELETE /api/v1/funcionarios/{id}/` - Remove funcionário
-
-#### Itens
-- `GET /api/v1/itens/` - Lista itens
-- `POST /api/v1/itens/` - Cria item
-- `GET /api/v1/itens/{id}/` - Detalhes do item
-- `PUT /api/v1/itens/{id}/` - Atualiza item
-- `DELETE /api/v1/itens/{id}/` - Remove item
-- `POST /api/v1/itens/{id}/colocar_em_manutencao/` - Coloca em manutenção
-- `POST /api/v1/itens/{id}/retornar_disponivel/` - Retorna para disponível
-
-#### Empréstimos
-- `GET /api/v1/emprestimos/` - Lista empréstimos
-- `POST /api/v1/emprestimos/` - Cria empréstimo
-- `GET /api/v1/emprestimos/{id}/` - Detalhes do empréstimo
-- `PUT /api/v1/emprestimos/{id}/` - Atualiza empréstimo
-- `DELETE /api/v1/emprestimos/{id}/` - Remove empréstimo
-- `POST /api/v1/emprestimos/{id}/devolver/` - Devolve empréstimo
-- `GET /api/v1/emprestimos/estatisticas/` - Estatísticas
-
-### Exemplo de Uso
-
-```bash
-# Listar funcionários
-curl -X GET http://localhost:8000/api/v1/funcionarios/
-
-# Criar funcionário
-curl -X POST http://localhost:8000/api/v1/funcionarios/ \
-  -H "Content-Type: application/json" \
-  -d '{
-    "nome": "João Silva",
-    "matricula": "123456",
-    "setor": "TI",
-    "email": "joao@exemplo.com",
-    "telefone": "11999999999"
-  }'
+#### **8. Acesse o sistema**
+```
+http://localhost:8000
 ```
 
-## 🧪 Testes
+### **📧 Configuração de Email (Opcional)**
 
-### Executar Testes
-```bash
-# Todos os testes
-pytest
+Para usar o sistema de emails automáticos:
 
-# Com cobertura
-pytest --cov=core
+1. **Configure o Gmail:**
+   - Ative a verificação em duas etapas
+   - Gere uma senha de app
+   - Configure no arquivo `.env`
 
-# Testes específicos
-pytest core/tests/test_models.py
-pytest core/tests/test_views.py
-```
-
-### Cobertura de Testes
-```bash
-coverage run --source='.' manage.py test
-coverage report
-coverage html  # Gera relatório HTML
-```
-
-## 📊 Relatórios PDF
-
-O sistema gera automaticamente relatórios em PDF:
-
-- **Relatório de Empréstimos**: Lista todos os empréstimos com filtros
-- **Relatório de Funcionários**: Lista todos os funcionários
-- **Relatório de Itens**: Lista todos os itens com status
-- **Dashboard**: Relatório geral com estatísticas
-
-### Gerar Relatórios via API
-```bash
-# Relatório de empréstimos
-curl -X GET "http://localhost:8000/api/v1/emprestimos/relatorio/" \
-  -H "Accept: application/pdf"
-
-# Relatório de funcionários
-curl -X GET "http://localhost:8000/api/v1/funcionarios/relatorio/" \
-  -H "Accept: application/pdf"
-```
-
-## 📧 Emails Automatizados
-
-O sistema envia automaticamente:
-
-- **Confirmação de Empréstimo**: Quando um empréstimo é criado
-- **Confirmação de Devolução**: Quando um item é devolvido
-- **Lembretes de Vencimento**: 3 dias e 1 dia antes do vencimento
-- **Notificação de Vencimento**: Quando um item está vencido
-- **Relatório Diário**: Para administradores
-
-### Configurar Emails
-Edite o arquivo `.env`:
-```env
-EMAIL_BACKEND=anymail.backends.sendgrid.EmailBackend
-SENDGRID_API_KEY=sua-chave-sendgrid
-```
-
-## 📱 WhatsApp Integration
-
-O sistema envia mensagens automáticas via WhatsApp:
-
-- **Confirmação de Empréstimo**
-- **Confirmação de Devolução**
-- **Lembretes de Vencimento**
-- **Notificações de Vencimento**
-
-### Configurar WhatsApp
-Edite o arquivo `.env`:
-```env
-WHATSAPP_API_KEY=sua-chave-whatsapp
-```
-
-## 🔧 Configuração
-
-### Variáveis de Ambiente
-
-Crie um arquivo `.env` baseado no `env.example`:
-
-```env
-# Django
-DEBUG=True
-SECRET_KEY=sua-chave-secreta
-ALLOWED_HOSTS=localhost,127.0.0.1
-
-# Database
-USE_POSTGRES=True
-DB_NAME=controle_emprestimos
-DB_USER=postgres
-DB_PASSWORD=postgres
-DB_HOST=localhost
-DB_PORT=5432
-
-# Redis
-REDIS_URL=redis://localhost:6379/1
-
-# Email
-EMAIL_BACKEND=anymail.backends.sendgrid.EmailBackend
-SENDGRID_API_KEY=sua-chave-sendgrid
-
-# WhatsApp
-WHATSAPP_API_KEY=sua-chave-whatsapp
-
-# Sentry (opcional)
-SENTRY_DSN=sua-dsn-sentry
-```
-
-## 🚀 Deploy
-
-### Docker Compose (Produção)
-```bash
-# Build das imagens
-docker-compose -f docker-compose.prod.yml build
-
-# Executar em produção
-docker-compose -f docker-compose.prod.yml up -d
-```
-
-### Servidor Tradicional
-```bash
-# Coletar arquivos estáticos
-python manage.py collectstatic
-
-# Configurar servidor web (nginx + gunicorn)
-# Ver documentação do Django para deploy
-```
-
-## 📝 Logs
-
-Os logs são salvos em:
-- `logs/django.log` - Logs da aplicação
-- Console - Logs em tempo real
-
-### Níveis de Log
-- **DEBUG**: Informações detalhadas
-- **INFO**: Informações gerais
-- **WARNING**: Avisos
-- **ERROR**: Erros
-- **CRITICAL**: Erros críticos
-
-## 🔒 Segurança
-
-- **Rate Limiting**: Proteção contra ataques de força bruta
-- **CORS**: Configuração de origens permitidas
-- **Validação**: Validação rigorosa de dados
-- **Logs de Segurança**: Registro de atividades suspeitas
-- **HTTPS**: Recomendado para produção
-
-## 👥 Autor
-
-- **Jeferson Oliveira** - *Desenvolvimento inicial* - [SeuGitHub](https://github.com/Jef-Oliver)
-
+2. **Teste o envio:**
+   - Acesse: `http://localhost:8000/relatorios/`
+   - Clique em "Enviar Emails Automáticos"
 
 ---
 
+## 🎯 **Como Usar o Sistema**
+
+### **📝 Fluxo Básico**
+
+1. **Cadastre Funcionários**
+   - Acesse: `http://localhost:8000/funcionarios/`
+   - Clique em "Novo Funcionário"
+   - Preencha os dados (nome, matrícula, setor, email)
+
+2. **Cadastre Itens**
+   - Acesse: `http://localhost:8000/items/`
+   - Clique em "Novo Item"
+   - Preencha os dados (nome, categoria, código)
+
+3. **Faça um Empréstimo**
+   - Acesse: `http://localhost:8000/emprestimos/`
+   - Clique em "Novo Empréstimo"
+   - Selecione funcionário e item
+   - Defina as datas
+
+4. **Sistema Automático**
+   - Email de confirmação é enviado automaticamente
+   - Lembretes são enviados conforme configurado
+   - Relatórios podem ser gerados a qualquer momento
+
+### **📊 Gerando Relatórios**
+
+1. **Acesse a página de relatórios:**
+   ```
+   http://localhost:8000/relatorios/
+   ```
+
+2. **Escolha o relatório:**
+   - Relatório de Empréstimos
+   - Relatório de Funcionários
+   - Relatório de Itens
+   - Relatório de Devoluções
+
+3. **Baixe em PDF:**
+   - Clique no botão correspondente
+   - O arquivo será baixado automaticamente
+
+### **📧 Emails Automáticos**
+
+O sistema envia emails automaticamente:
+
+- **Ao criar empréstimo** - Confirmação para o funcionário
+- **Ao devolver item** - Confirmação de devolução
+- **Lembretes de vencimento** - Para itens próximos do prazo
+- **Notificações de atraso** - Para itens vencidos
+
+**Para testar:**
+```
+http://localhost:8000/relatorios/
+→ Clique em "Enviar Emails Automáticos"
+```
+
+---
+
+## 🛠️ **Comandos Úteis**
+
+### **📧 Envio de Emails**
+```bash
+# Enviar emails para todos os empréstimos
+python manage.py enviar_emails_emprestimos --tipo todos
+
+# Enviar emails apenas para atrasados
+python manage.py enviar_emails_emprestimos --tipo atrasados
+
+# Enviar email para funcionário específico
+python manage.py enviar_emails_emprestimos --funcionario-id 1
+```
+
+### **⏰ Agendador Automático**
+```bash
+# Executar agendador de emails (24/7)
+python agendar_emails.py
+```
+
+### **🧪 Testes**
+```bash
+# Executar testes automatizados
+python manage.py test
+
+# Executar com cobertura
+pytest --cov=core
+```
+
+### **📊 Relatórios via Comando**
+```bash
+# Gerar relatório de empréstimos
+python manage.py gerar_relatorio emprestimos
+
+# Gerar relatório de funcionários
+python manage.py gerar_relatorio funcionarios
+```
+
+---
+
+## 🌐 **API e Documentação**
+
+### **📚 Swagger/OpenAPI**
+```
+http://localhost:8000/api/docs/
+```
+
+### **📖 ReDoc (Alternativa)**
+```
+http://localhost:8000/api/redoc/
+```
+
+### **🔧 Endpoints Principais**
+- `GET /api/funcionarios/` - Lista funcionários
+- `POST /api/funcionarios/` - Cria funcionário
+- `GET /api/items/` - Lista itens
+- `POST /api/items/` - Cria item
+- `GET /api/emprestimos/` - Lista empréstimos
+- `POST /api/emprestimos/` - Cria empréstimo
+
+---
+
+## 🐳 **Docker (Opcional)**
+
+### **🚀 Executar com Docker**
+```bash
+# Construir e executar
+docker-compose up --build
+
+# Executar em background
+docker-compose up -d
+
+# Parar
+docker-compose down
+```
+
+---
+
+## 🤝 **Contribuindo**
+
+1. **Fork o projeto**
+2. **Crie uma branch** (`git checkout -b feature/nova-funcionalidade`)
+3. **Commit suas mudanças** (`git commit -m 'Adiciona nova funcionalidade'`)
+4. **Push para a branch** (`git push origin feature/nova-funcionalidade`)
+5. **Abra um Pull Request**
+
+---
+
+## 📄 **Licença**
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+---
+
+## 📞 **Suporte**
+
+- **Issues:** [GitHub Issues](https://github.com/Jef-Oliver/controle-emprestimos/issues)
+- **Documentação:** [Wiki do Projeto](https://github.com/Jef-Oliver/controle-emprestimos/wiki)
+
+---
+
+## 🎉 **Agradecimentos**
+
+Agradecemos a todas as organizações que inspiraram este projeto:
+- 🏭 Empresas que emprestam ferramentas
+- 🏫 Escolas que emprestam materiais
+- 🏛️ Órgãos públicos que gerenciam patrimônio
+- 👥 Todos que precisam de controle de empréstimos
+
+**Este sistema foi criado para tornar a gestão de patrimônio mais eficiente e profissional!** 🚀
