@@ -123,4 +123,14 @@ GitHub: [https://github.com/Jef-Oliver](https://github.com/Jef-Oliver)
 
 # IMAGENS DO PROJETO FUNCIONAL
 
-![Admin do Django](captura1.png
+![Admin do Django](cap1.png)
+![Admin do Django](cap2.png)
+![Admin do Django](cap3.png)
+![Admin do Django](cap4.png)
+![Admin do Django](cap5.png)
+![Admin do Django](cap6.png)
+![Admin do Django](cap7.png)
+![Admin do Django](cap8.png)
+![Admin do Django](cap9.png)
+![Admin do Django](cap10.png)
+![Admin do Django](cap11.png)
