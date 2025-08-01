@@ -112,7 +112,7 @@ Desenvolvemos um sistema completo com:
 
 ### **⚙️ Instalação Passo a Passo**
 
-### **📦 Deploy com Docker**
+### **🐳 Deploy com Docker**
 
 #### **Opção 1: Deploy Local**
 ```bash
@@ -342,22 +342,6 @@ http://localhost:8000/api/redoc/
 - `POST /api/items/` - Cria item
 - `GET /api/emprestimos/` - Lista empréstimos
 - `POST /api/emprestimos/` - Cria empréstimo
-
----
-
-## 🐳 **Docker (Opcional)**
-
-### **🚀 Executar com Docker**
-```bash
-# Construir e executar
-docker-compose up --build
-
-# Executar em background
-docker-compose up -d
-
-# Parar
-docker-compose down
-```
 
 ---
 
