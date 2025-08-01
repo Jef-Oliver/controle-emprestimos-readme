@@ -156,7 +156,7 @@ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 
 ---
 
-#### Deploy Local
+### **📦 Python Local**
 
 #### **1. Clone o repositório**
 ```bash
