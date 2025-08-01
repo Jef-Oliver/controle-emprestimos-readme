@@ -343,3 +343,5 @@ Agradecemos a todas as organizações que inspiraram este projeto:
 - 👥 Todos que precisam de controle de empréstimos
 
 **Este sistema foi criado para tornar a gestão de patrimônio mais eficiente e profissional!** 🚀
+
+
