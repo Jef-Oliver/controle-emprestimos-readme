@@ -110,6 +110,54 @@ Desenvolvemos um sistema completo com:
 
 ### **⚙️ Instalação Passo a Passo**
 
+### **📦 Deploy com Docker**
+
+#### **Opção 1: Deploy Local**
+```bash
+# Clone o projeto
+git clone https://github.com/Jef-Oliver/controle-emprestimos.git
+cd controle-emprestimos
+
+# Execute com Docker
+docker-compose up -d
+
+# Acesse o sistema
+http://localhost:8000
+```
+
+#### **Opção 2: Deploy em Servidor**
+```bash
+# No servidor, clone o projeto
+git clone https://github.com/Jef-Oliver/controle-emprestimos.git
+cd controle-emprestimos
+
+# Configure as variáveis de ambiente
+cp env.example .env
+# Edite o arquivo .env com suas configurações
+
+# Execute em background
+docker-compose up -d
+
+# Verifique os logs
+docker-compose logs -f
+
+# Acesse via IP do servidor
+http://[IP_DO_SERVIDOR]:8000
+```
+
+#### **Opção 3: Deploy com Nginx (Produção)**
+```bash
+# Use o docker-compose com Nginx
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+# Configure SSL/HTTPS
+# Edite o arquivo nginx.conf conforme necessário
+```
+
+---
+
+#### Deploy Local
+
 #### **1. Clone o repositório**
 ```bash
 git clone https://github.com/Jef-Oliver/controle-emprestimos.git
